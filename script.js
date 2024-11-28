@@ -37,4 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
         li.appendChild(deleteBtn);
         taskList.appendChild(li);
     };
+
+    completeBtn.addEventListener("click", () => {
+        li.classList.toggle("completed");
+    });
+
 });
