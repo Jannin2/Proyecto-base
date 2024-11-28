@@ -42,4 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
         li.classList.toggle("completed");
     });
 
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "✎";
+    editBtn.addEventListener("click", () => {
+        const newText = prompt("Edita la tarea:", span.textContent);
+        if (newText) {
+            span.textContent = newText;
+        }
+    });
+
+    li.appendChild(editBtn);
+
+
 });
