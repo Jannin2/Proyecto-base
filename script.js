@@ -53,5 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     li.appendChild(editBtn);
 
+    deleteBtn.addEventListener("click", () => {
+        li.remove();
+    });
+
 
 });
